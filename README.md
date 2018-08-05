@@ -1,1 +1,2 @@
 # 25MinMAC
+A bash script to change the MAC address of unix devices every 25 minute, this effectively bypasses paid wifi hotspots which offer '30 minute trials' by generating a new random MAC address every 25 munutes. 

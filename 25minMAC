@@ -1,0 +1,13 @@
+#!/bin/bash
+while true; do
+echo "Changing MAC address"
+openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//' | xargs sudo ifconfig en0 ether
+echo "MAC address changed. Address cycling again in 25 minutes";
+networksetup -setairportpower en0 off
+echo "Turning off wireless card"
+sleep 2
+networksetup -setairportpower en0 on
+echo "Wireless card back online"
+sleep 1500;
+done
+
