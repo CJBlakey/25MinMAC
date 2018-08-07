@@ -1,0 +1,3 @@
+- Edit script to prompt user for free wifi duration (to allow script to be used on networks where the free trial duration is not 30 minutes)
+- Build list of known hostpot providers using MAC filtering for security.
+- Add a feature to retain used MAC addresses in order to ensure that the same MAC address is not reused in the same session.
